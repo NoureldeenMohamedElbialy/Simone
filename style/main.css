@@ -1,111 +1,144 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
-:root{
-    --main-color:#20c997;
+
+:root {
+    --main-color: #20c997;
 }
-.text-main{
-    color:var(--main-color);
+
+.text-main {
+    color: var(--main-color);
 }
-.bg-main{
+
+.bg-main {
     background-color: var(--main-color);
 }
-.bg-black{
+
+.bg-black {
     background-color: black;
 }
-.text-black{
+
+.text-black {
     color: black;
 }
-#home{
+
+#home {
     background-image: url(../img/intro-bg.jpg);
     background-size: cover;
     background-position: top right;
 }
-.header-layer{
+
+.header-layer {
     background-color: rgba(0, 0, 0, 0.7);
 }
-nav .navbar a img{
+
+nav .navbar a img {
     width: 90px;
 }
-header h1{
+
+header h1 {
     font-size: 4rem;
     font-weight: 900;
 }
-header h1::after{
+
+header h1::after {
     content: '';
     animation: typing 12s infinite ease-out;
 }
-nav .nav-link:hover{
+
+nav .nav-link:hover {
     color: var(--main-color) !important;
 }
-header button{
+
+header button {
     border-color: var(--main-color) 5px !important;
 }
-header button:hover{
+
+header button:hover {
     background-color: var(--main-color);
     color: white !important;
     border-color: var(--main-color) !important;
 }
-.title h2{
+
+.title h2 {
     font-size: 7rem;
     font-weight: 900;
-    color:#f1f1f1;
+    color: #f1f1f1;
 }
-.title h3{
+
+.title h3 {
     font-size: 2.5rem;
     font-weight: 900;
 }
-.title h3 .line{
+
+.title h3 .line {
     height: 3px;
 }
-#about ul li a:hover{
+
+#about ul li a:hover {
     color: var(--main-color);
 }
-.bg-layer-gray{
+
+.bg-layer-gray {
     background-color: rgba(0, 0, 0, 0.6) !important;
 }
-#portfolio .container .item-layer{
+
+#portfolio .container .item-layer {
     opacity: 0;
     transition: opacity 1s;
 }
-#portfolio .container .item-layer:hover{
+
+#portfolio .container .item-layer:hover {
     opacity: 1;
 }
-.portfolio .item{
+
+.portfolio .item {
     border-radius: 1rem;
 }
-.portfolio .item img{
+
+.portfolio .item img {
     transition: transform 1s;
 }
-.portfolio .item:hover img{
-    transform: scale(1.2,1.2);
+
+.portfolio .item:hover img {
+    transform: scale(1.2, 1.2);
 }
-.portfolio .container ul li a{
+
+.portfolio .container ul li a {
     color: black;
     transition: color 0.3s;
 }
-.portfolio .container ul li a:hover{
+
+.portfolio .container ul li a:hover {
     color: var(--main-color);
 }
-.spe-line{
+
+.spe-line {
     top: 115%;
 }
-#client .carousel-indicators button{
+
+#client .carousel-indicators button {
     background-color: var(--main-color) !important;
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
-#contact ul li a{
+
+#contact ul li a {
     transition: color 0.3s;
 }
-#contact ul li a:hover{
+
+#contact ul li a:hover {
     color: var(--main-color);
 }
-.sp-fo-item p{
+
+.sp-fo-item p {
     transition: color 0.5s;
 }
-.sp-fo-item p:hover{
+
+.sp-fo-item p:hover {
     color: var(--main-color) !important;
 }
 
@@ -128,118 +161,420 @@ header button:hover{
 
 
 @keyframes typing {
-    1%{content: 'S';}
-    2%{content: 'Si';}
-    3%{content: 'Sim';}
-    4%{content: 'Simo';}
-    5%{content: 'Simon';}
-    6%{content: 'Simone';}
-    7%{content: 'Simone ';}
-    8%{content: 'Simone O';}
-    9%{content: 'Simone Ol';}
-    10%{content: 'Simone Oli';}
-    11%{content: 'Simone Oliv';}
-    12%{content: 'Simone Olivi';}
-    13%{content: 'Simone Olivia';}
-    14%{content: 'Simone Olivi';}
-    15%{content: 'Simone Oliv';}
-    16%{content: 'Simone Oli';}
-    17%{content: 'Simone Ol';}
-    18%{content: 'Simone O';}
-    19%{content: 'Simone ';}
-    20%{content: 'Simone';}
-    21%{content: 'Simon';}
-    22%{content: 'Simo';}
-    23%{content: 'Sim';}
-    24%{content: 'Si';}
-    25%{content: 'S';}
-    26%{content: '';}
-    27%{content: 'a';}
-    28%{content: 'a ';}
-    29%{content: 'a F';}
-    30%{content: 'a Fr';}
-    31%{content: 'a Fre';}
-    32%{content: 'a Free';}
-    33%{content: 'a Freel';}
-    34%{content: 'a Freela';}
-    35%{content: 'a Freelan';}
-    36%{content: 'a Freelanc';}
-    37%{content: 'a Freelance';}
-    38%{content: 'a Freelancer';}
-    39%{content: 'a Freelance';}
-    40%{content: 'a Freelanc';}
-    41%{content: 'a Freelan';}
-    42%{content: 'a Freela';}
-    43%{content: 'a Freel';}
-    44%{content: 'a Free';}
-    45%{content: 'a Fre';}
-    46%{content: 'a Fr';}
-    47%{content: 'a F';}
-    48%{content: 'a ';}
-    49%{content: 'a';}
-    50%{content: 'a P';}
-    51%{content: 'a Ph';}
-    52%{content: 'a Pho';}
-    53%{content: 'a Phot';}
-    54%{content: 'a Photo';}
-    55%{content: 'a Photog';}
-    56%{content: 'a Photogr';}
-    57%{content: 'a Photogra';}
-    58%{content: 'a Photograp';}
-    59%{content: 'a Photograph';}
-    60%{content: 'a Photographe';}
-    61%{content: 'a Photographer';}
-    62%{content: 'a Photographe';}
-    63%{content: 'a Photograph';}
-    64%{content: 'a Photograp';}
-    65%{content: 'a Photogra';}
-    66%{content: 'a Photogr';}
-    67%{content: 'a Photog';}
-    68%{content: 'a Photo';}
-    69%{content: 'a Phot';}
-    70%{content: 'a Pho';}
-    71%{content: 'a Ph';}
-    72%{content: 'a P';}
-    73%{content: 'a ';}
-    74%{content: 'a';}
-    75%{content: 'a ';}
-    76%{content: 'a D';}
-    77%{content: 'a De';}
-    78%{content: 'a Des';}
-    79%{content: 'a Desi';}
-    80%{content: 'a Desig';}
-    81%{content: 'a Design';}
-    82%{content: 'a Designe';}
-    83%{content: 'a Designer';}
-    84%{content: 'a Designe';}
-    85%{content: 'a Design';}
-    86%{content: 'a Desig';}
-    87%{content: 'a Desi';}
-    88%{content: 'a Des';}
-    89%{content: 'a De';}
-    90%{content: 'a D';}
-    91%{content: 'a ';}
-    92%{content: 'a';}
-    93%{content: '';}
+    1% {
+        content: 'S';
+    }
+
+    2% {
+        content: 'Si';
+    }
+
+    3% {
+        content: 'Sim';
+    }
+
+    4% {
+        content: 'Simo';
+    }
+
+    5% {
+        content: 'Simon';
+    }
+
+    6% {
+        content: 'Simone';
+    }
+
+    7% {
+        content: 'Simone ';
+    }
+
+    8% {
+        content: 'Simone O';
+    }
+
+    9% {
+        content: 'Simone Ol';
+    }
+
+    10% {
+        content: 'Simone Oli';
+    }
+
+    11% {
+        content: 'Simone Oliv';
+    }
+
+    12% {
+        content: 'Simone Olivi';
+    }
+
+    13% {
+        content: 'Simone Olivia';
+    }
+
+    14% {
+        content: 'Simone Olivi';
+    }
+
+    15% {
+        content: 'Simone Oliv';
+    }
+
+    16% {
+        content: 'Simone Oli';
+    }
+
+    17% {
+        content: 'Simone Ol';
+    }
+
+    18% {
+        content: 'Simone O';
+    }
+
+    19% {
+        content: 'Simone ';
+    }
+
+    20% {
+        content: 'Simone';
+    }
+
+    21% {
+        content: 'Simon';
+    }
+
+    22% {
+        content: 'Simo';
+    }
+
+    23% {
+        content: 'Sim';
+    }
+
+    24% {
+        content: 'Si';
+    }
+
+    25% {
+        content: 'S';
+    }
+
+    26% {
+        content: '';
+    }
+
+    27% {
+        content: 'a';
+    }
+
+    28% {
+        content: 'a ';
+    }
+
+    29% {
+        content: 'a F';
+    }
+
+    30% {
+        content: 'a Fr';
+    }
+
+    31% {
+        content: 'a Fre';
+    }
+
+    32% {
+        content: 'a Free';
+    }
+
+    33% {
+        content: 'a Freel';
+    }
+
+    34% {
+        content: 'a Freela';
+    }
+
+    35% {
+        content: 'a Freelan';
+    }
+
+    36% {
+        content: 'a Freelanc';
+    }
+
+    37% {
+        content: 'a Freelance';
+    }
+
+    38% {
+        content: 'a Freelancer';
+    }
+
+    39% {
+        content: 'a Freelance';
+    }
+
+    40% {
+        content: 'a Freelanc';
+    }
+
+    41% {
+        content: 'a Freelan';
+    }
+
+    42% {
+        content: 'a Freela';
+    }
+
+    43% {
+        content: 'a Freel';
+    }
+
+    44% {
+        content: 'a Free';
+    }
+
+    45% {
+        content: 'a Fre';
+    }
+
+    46% {
+        content: 'a Fr';
+    }
+
+    47% {
+        content: 'a F';
+    }
+
+    48% {
+        content: 'a ';
+    }
+
+    49% {
+        content: 'a';
+    }
+
+    50% {
+        content: 'a P';
+    }
+
+    51% {
+        content: 'a Ph';
+    }
+
+    52% {
+        content: 'a Pho';
+    }
+
+    53% {
+        content: 'a Phot';
+    }
+
+    54% {
+        content: 'a Photo';
+    }
+
+    55% {
+        content: 'a Photog';
+    }
+
+    56% {
+        content: 'a Photogr';
+    }
+
+    57% {
+        content: 'a Photogra';
+    }
+
+    58% {
+        content: 'a Photograp';
+    }
+
+    59% {
+        content: 'a Photograph';
+    }
+
+    60% {
+        content: 'a Photographe';
+    }
+
+    61% {
+        content: 'a Photographer';
+    }
+
+    62% {
+        content: 'a Photographe';
+    }
+
+    63% {
+        content: 'a Photograph';
+    }
+
+    64% {
+        content: 'a Photograp';
+    }
+
+    65% {
+        content: 'a Photogra';
+    }
+
+    66% {
+        content: 'a Photogr';
+    }
+
+    67% {
+        content: 'a Photog';
+    }
+
+    68% {
+        content: 'a Photo';
+    }
+
+    69% {
+        content: 'a Phot';
+    }
+
+    70% {
+        content: 'a Pho';
+    }
+
+    71% {
+        content: 'a Ph';
+    }
+
+    72% {
+        content: 'a P';
+    }
+
+    73% {
+        content: 'a ';
+    }
+
+    74% {
+        content: 'a';
+    }
+
+    75% {
+        content: 'a ';
+    }
+
+    76% {
+        content: 'a D';
+    }
+
+    77% {
+        content: 'a De';
+    }
+
+    78% {
+        content: 'a Des';
+    }
+
+    79% {
+        content: 'a Desi';
+    }
+
+    80% {
+        content: 'a Desig';
+    }
+
+    81% {
+        content: 'a Design';
+    }
+
+    82% {
+        content: 'a Designe';
+    }
+
+    83% {
+        content: 'a Designer';
+    }
+
+    84% {
+        content: 'a Designe';
+    }
+
+    85% {
+        content: 'a Design';
+    }
+
+    86% {
+        content: 'a Desig';
+    }
+
+    87% {
+        content: 'a Desi';
+    }
+
+    88% {
+        content: 'a Des';
+    }
+
+    89% {
+        content: 'a De';
+    }
+
+    90% {
+        content: 'a D';
+    }
+
+    91% {
+        content: 'a ';
+    }
+
+    92% {
+        content: 'a';
+    }
+
+    93% {
+        content: '';
+    }
 }
+
 @media screen and (max-width:800px) {
-    header h1{
+    header h1 {
         font-size: 3rem !important;
     }
-    .title h2{
+
+    .title h2 {
         font-size: 5rem;
     }
-    .title h3{
+
+    .title h3 {
         font-size: 2rem;
     }
-    .spe-h2{
+
+    .spe-h2 {
         font-size: 4rem !important;
     }
-    #about .container .count{
-        border-right:none !important;
-        border-bottom:1px solid #dee2e6;
+
+    #about .container .count {
+        border-right: none !important;
+        border-bottom: 1px solid #dee2e6;
     }
-    #about .container .count-none{
+
+    #about .container .count-none {
         border: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .title h2 {
+        font-size: 2.5rem;
+    }
+
+    .title h3 {
+        font-size: 1rem;
+    }
+
+    .spe-h2 {
+        font-size: 2rem !important;
     }
 }
