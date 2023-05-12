@@ -1,6 +1,7 @@
 *,
 *::after,
 *::before {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -45,6 +46,7 @@ header h1 {
 
 header h1::after {
     content: '';
+    -webkit-animation: typing 12s infinite ease-out;
     animation: typing 12s infinite ease-out;
 }
 
@@ -87,6 +89,8 @@ header button:hover {
 
 #portfolio .container .item-layer {
     opacity: 0;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
     transition: opacity 1s;
 }
 
@@ -99,15 +103,23 @@ header button:hover {
 }
 
 .portfolio .item img {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
     transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
 }
 
 .portfolio .item:hover img {
+    -webkit-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
 }
 
 .portfolio .container ul li a {
     color: black;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
     transition: color 0.3s;
 }
 
@@ -127,6 +139,8 @@ header button:hover {
 }
 
 #contact ul li a {
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
     transition: color 0.3s;
 }
 
@@ -135,11 +149,405 @@ header button:hover {
 }
 
 .sp-fo-item p {
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
 }
 
 .sp-fo-item p:hover {
     color: var(--main-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes typing {
+    1% {
+        content: 'S';
+    }
+
+    2% {
+        content: 'Si';
+    }
+
+    3% {
+        content: 'Sim';
+    }
+
+    4% {
+        content: 'Simo';
+    }
+
+    5% {
+        content: 'Simon';
+    }
+
+    6% {
+        content: 'Simone';
+    }
+
+    7% {
+        content: 'Simone ';
+    }
+
+    8% {
+        content: 'Simone O';
+    }
+
+    9% {
+        content: 'Simone Ol';
+    }
+
+    10% {
+        content: 'Simone Oli';
+    }
+
+    11% {
+        content: 'Simone Oliv';
+    }
+
+    12% {
+        content: 'Simone Olivi';
+    }
+
+    13% {
+        content: 'Simone Olivia';
+    }
+
+    14% {
+        content: 'Simone Olivi';
+    }
+
+    15% {
+        content: 'Simone Oliv';
+    }
+
+    16% {
+        content: 'Simone Oli';
+    }
+
+    17% {
+        content: 'Simone Ol';
+    }
+
+    18% {
+        content: 'Simone O';
+    }
+
+    19% {
+        content: 'Simone ';
+    }
+
+    20% {
+        content: 'Simone';
+    }
+
+    21% {
+        content: 'Simon';
+    }
+
+    22% {
+        content: 'Simo';
+    }
+
+    23% {
+        content: 'Sim';
+    }
+
+    24% {
+        content: 'Si';
+    }
+
+    25% {
+        content: 'S';
+    }
+
+    26% {
+        content: '';
+    }
+
+    27% {
+        content: 'a';
+    }
+
+    28% {
+        content: 'a ';
+    }
+
+    29% {
+        content: 'a F';
+    }
+
+    30% {
+        content: 'a Fr';
+    }
+
+    31% {
+        content: 'a Fre';
+    }
+
+    32% {
+        content: 'a Free';
+    }
+
+    33% {
+        content: 'a Freel';
+    }
+
+    34% {
+        content: 'a Freela';
+    }
+
+    35% {
+        content: 'a Freelan';
+    }
+
+    36% {
+        content: 'a Freelanc';
+    }
+
+    37% {
+        content: 'a Freelance';
+    }
+
+    38% {
+        content: 'a Freelancer';
+    }
+
+    39% {
+        content: 'a Freelance';
+    }
+
+    40% {
+        content: 'a Freelanc';
+    }
+
+    41% {
+        content: 'a Freelan';
+    }
+
+    42% {
+        content: 'a Freela';
+    }
+
+    43% {
+        content: 'a Freel';
+    }
+
+    44% {
+        content: 'a Free';
+    }
+
+    45% {
+        content: 'a Fre';
+    }
+
+    46% {
+        content: 'a Fr';
+    }
+
+    47% {
+        content: 'a F';
+    }
+
+    48% {
+        content: 'a ';
+    }
+
+    49% {
+        content: 'a';
+    }
+
+    50% {
+        content: 'a P';
+    }
+
+    51% {
+        content: 'a Ph';
+    }
+
+    52% {
+        content: 'a Pho';
+    }
+
+    53% {
+        content: 'a Phot';
+    }
+
+    54% {
+        content: 'a Photo';
+    }
+
+    55% {
+        content: 'a Photog';
+    }
+
+    56% {
+        content: 'a Photogr';
+    }
+
+    57% {
+        content: 'a Photogra';
+    }
+
+    58% {
+        content: 'a Photograp';
+    }
+
+    59% {
+        content: 'a Photograph';
+    }
+
+    60% {
+        content: 'a Photographe';
+    }
+
+    61% {
+        content: 'a Photographer';
+    }
+
+    62% {
+        content: 'a Photographe';
+    }
+
+    63% {
+        content: 'a Photograph';
+    }
+
+    64% {
+        content: 'a Photograp';
+    }
+
+    65% {
+        content: 'a Photogra';
+    }
+
+    66% {
+        content: 'a Photogr';
+    }
+
+    67% {
+        content: 'a Photog';
+    }
+
+    68% {
+        content: 'a Photo';
+    }
+
+    69% {
+        content: 'a Phot';
+    }
+
+    70% {
+        content: 'a Pho';
+    }
+
+    71% {
+        content: 'a Ph';
+    }
+
+    72% {
+        content: 'a P';
+    }
+
+    73% {
+        content: 'a ';
+    }
+
+    74% {
+        content: 'a';
+    }
+
+    75% {
+        content: 'a ';
+    }
+
+    76% {
+        content: 'a D';
+    }
+
+    77% {
+        content: 'a De';
+    }
+
+    78% {
+        content: 'a Des';
+    }
+
+    79% {
+        content: 'a Desi';
+    }
+
+    80% {
+        content: 'a Desig';
+    }
+
+    81% {
+        content: 'a Design';
+    }
+
+    82% {
+        content: 'a Designe';
+    }
+
+    83% {
+        content: 'a Designer';
+    }
+
+    84% {
+        content: 'a Designe';
+    }
+
+    85% {
+        content: 'a Design';
+    }
+
+    86% {
+        content: 'a Desig';
+    }
+
+    87% {
+        content: 'a Desi';
+    }
+
+    88% {
+        content: 'a Des';
+    }
+
+    89% {
+        content: 'a De';
+    }
+
+    90% {
+        content: 'a D';
+    }
+
+    91% {
+        content: 'a ';
+    }
+
+    92% {
+        content: 'a';
+    }
+
+    93% {
+        content: '';
+    }
 }
 
 
