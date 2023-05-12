@@ -567,7 +567,7 @@ header button:hover {
 
 @media screen and (max-width:600px) {
     .title h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .title h3 {
@@ -575,6 +575,6 @@ header button:hover {
     }
 
     .spe-h2 {
-        font-size: 3rem !important;
+        font-size: 2rem !important;
     }
 }
