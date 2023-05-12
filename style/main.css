@@ -535,9 +535,10 @@ header button:hover {
 }
 
 @media screen and (max-width:800px) {
-    html{
+    html {
         font-size: 12px;
     }
+
     header h1 {
         font-size: 3rem !important;
     }
@@ -561,5 +562,19 @@ header button:hover {
 
     #about .container .count-none {
         border: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .title h2 {
+        font-size: 4rem;
+    }
+
+    .title h3 {
+        font-size: 1.5rem;
+    }
+
+    .spe-h2 {
+        font-size: 3rem !important;
     }
 }
